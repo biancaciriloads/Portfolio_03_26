@@ -1,0 +1,226 @@
+/* 1. CONFIGURAÇÕES GERAIS E RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth; /* Rolagem suave ao clicar no menu */
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+/* 2. CAPA (HERO)*/
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), 
+                url('Assets/capa2.jpeg') no-repeat center center/cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* MENU DISCRETO SOBRE A CAPA */
+.nav-overlay {
+    position: absolute;
+    top: 30px;
+    
+    display: flex;
+    gap: 35px;
+}
+
+.nav-overlay a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    
+}
+
+.nav-overlay a:hover {
+    color: #bc9667; /* Tom dourado no hover */
+}
+
+/* CAIXA DE TEXTO (GLASSMORPHISM) */
+.hero-content {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    padding: 25px 35px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 80px;
+   
+}
+.hero-content p {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #1a1a1a;
+}
+
+/* 3. LINKS SOCIAIS (ESTILO PEDIDO: PRETO, SEM SUBLINHADO E COM TRANSIÇÃO) */
+.header-socials-mini {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-socials-mini a {
+    text-decoration: none;
+    color: #1a1a1a; /* Preto/Grafite */
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-socials-mini a i {
+    font-size: 1.3rem;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.header-socials-mini a:hover {
+    color: #bc9667; /* Dourado */
+    transform: translateY(-3px); /* Leve pulinho para cima */
+}
+
+/* 4. SEÇÕES E CONTEÚDO */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.section {
+    margin-bottom: 100px;
+    scroll-margin-top: 80px; /* Evita que o título fique colado no topo ao rolar */
+}
+
+.section-title {
+    border-left: 4px solid #bc9667;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-text {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    line-height: 1.8;
+}
+
+/* 5. CERTIFICADOS (CARROSSEL VISUAL) */
+.carousel-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* 6. GRADE DE RESULTADOS (2 COLUNAS / 4 FOTOS) */
+.grid-resultados {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 30px;
+}
+
+.res-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.res-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.res-desc {
+    padding: 20px;
+}
+
+.res-desc h3 {
+    color: #bc9667;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.res-desc p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 7. RODAPÉ */
+.footer-simple {
+    text-align: center;
+    padding: 60px;
+    background-color: #1a1a1a;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* 8. RESPONSIVIDADE (PARA CELULARES) */
+@media (max-width: 768px) {
+    .hero {
+        align-items: center; /* Centraliza no celular para melhor visualização */
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .nav-overlay {
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .grid-resultados {
+        grid-template-columns: 1fr; /* Uma coluna só no celular */
+    }
+
+    .hero-content {
+        margin-top: 100px;
+    }
+}
