@@ -4,7 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth; /* Rolagem suave ao clicar no menu */
+    scroll-behavior: smooth;
+    /* Rolagem suave ao clicar no menu */
 }
 
 body {
@@ -16,9 +17,9 @@ body {
 /* 2. CAPA (HERO)*/
 .hero {
     height: 85vh;
-    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), 
-                url('Assets/capa2.jpeg') no-repeat center center/cover;
-    
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+        url('Assets/capa2.jpeg') no-repeat center center/cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +31,7 @@ body {
 .nav-overlay {
     position: absolute;
     top: 30px;
-    
+
     display: flex;
     gap: 35px;
 }
@@ -43,24 +44,27 @@ body {
     font-size: 1rem;
     letter-spacing: 2px;
     transition: 0.3s;
-    
+
 }
 
 .nav-overlay a:hover {
-    color: #bc9667; /* Tom dourado no hover */
+    color: #bc9667;
+    /* Tom dourado no hover */
 }
 
 /* CAIXA DE TEXTO (GLASSMORPHISM) */
 .hero-content {
     background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+    -webkit-backdrop-filter: blur(10px);
+    /* Suporte para Safari */
     padding: 25px 35px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     margin-top: 80px;
-   
+
 }
+
 .hero-content p {
     font-size: 1.1rem;
     color: #1a1a1a;
@@ -71,7 +75,7 @@ body {
 .hero-content h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -94,7 +98,8 @@ body {
 
 .header-socials-mini a {
     text-decoration: none;
-    color: #1a1a1a; /* Preto/Grafite */
+    color: #1a1a1a;
+    /* Preto/Grafite */
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
@@ -107,8 +112,10 @@ body {
 
 /* EFEITO AO PASSAR O MOUSE */
 .header-socials-mini a:hover {
-    color: #bc9667; /* Dourado */
-    transform: translateY(-3px); /* Leve pulinho para cima */
+    color: #bc9667;
+    /* Dourado */
+    transform: translateY(-3px);
+    /* Leve pulinho para cima */
 }
 
 /* 4. SEÇÕES E CONTEÚDO */
@@ -120,7 +127,8 @@ body {
 
 .section {
     margin-bottom: 100px;
-    scroll-margin-top: 80px; /* Evita que o título fique colado no topo ao rolar */
+    scroll-margin-top: 80px;
+    /* Evita que o título fique colado no topo ao rolar */
 }
 
 .section-title {
@@ -130,23 +138,26 @@ body {
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 .card-text {
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     line-height: 1.8;
 }
-
+.texto-sobre-mim{
+    
+}
 /* 5. CERTIFICADOS (CARROSSEL VISUAL) */
 .carousel-box {
     background: white;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
 .carousel-item img {
@@ -159,7 +170,8 @@ body {
 /* 6. GRADE DE RESULTADOS (2 COLUNAS / 4 FOTOS) */
 .grid-resultados {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    grid-template-columns: 1fr 1fr;
+    /* Duas colunas iguais */
     gap: 30px;
 }
 
@@ -167,7 +179,7 @@ body {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .res-card img {
@@ -203,11 +215,12 @@ body {
 /* 8. RESPONSIVIDADE (PARA CELULARES) */
 @media (max-width: 768px) {
     .hero {
-        align-items: center; /* Centraliza no celular para melhor visualização */
+        align-items: center;
+        /* Centraliza no celular para melhor visualização */
         padding-left: 0;
         text-align: center;
     }
-    
+
     .nav-overlay {
         left: 50%;
         transform: translateX(-50%);
@@ -217,7 +230,8 @@ body {
     }
 
     .grid-resultados {
-        grid-template-columns: 1fr; /* Uma coluna só no celular */
+        grid-template-columns: 1fr;
+        /* Uma coluna só no celular */
     }
 
     .hero-content {

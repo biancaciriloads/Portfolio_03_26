@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="portifolio.css">
 </head>
+
 <body>
 
     <header class="hero">
         <nav class="nav-overlay">
             <a href="#formacao"><strong>Formação</strong></a>
+            <a href="#sobre-mim"><strong>Sobre Mim</strong></a>
             <a href="#certificados"><strong>Certificados</strong></a>
-            <a href="#antes-depois"><strong>Resultados</strong></a>
             <a href="#experiencia"><strong>Experiências Profissionais</strong></a>
-            
+            <a href="#antes-depois"><strong>Resultados</strong></a>
         </nav>
 
-    <div class="hero-content">
-        <h1>Dra. Bianca Cirilo</h1>
-        <p>Biomédica Esteta | Estudante de ADS</p>
+        <div class="hero-content">
+            <h1>Dra. Bianca Cirilo</h1>
+            <p>Biomédica Esteta | Estudante de ADS</p>
             <div class="header-socials-mini">
-            <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank">
-            <span><i class="fa-brands fa-linkedin"></i></span></a>
+                <a href="https://www.linkedin.com/in/SEU-PERFIL" target="_blank">
+                    <span><i class="fa-brands fa-linkedin"></i></span></a>
 
-            <a href="https://www.instagram.com/SEU-USUARIO" target="_blank">
-            <span><i class="fa-brands fa-instagram"></i></span></a>
+                <a href="https://www.instagram.com/SEU-USUARIO" target="_blank">
+                    <span><i class="fa-brands fa-instagram"></i></span></a>
 
-            <a href="https://wa.me/55DDDSEUNUMERO" target="_blank" class="phone-number">
-            <span><i class="fa-brands fa-whatsapp"></i> (15) 98815-3502</span></a>
+                <a href="https://wa.me/55DDDSEUNUMERO" target="_blank" class="phone-number">
+                    <span><i class="fa-brands fa-whatsapp"></i> (15) 98815-3502</span></a>
             </div>
-    </div>
+        </div>
         </div>
     </header>
 
@@ -44,19 +46,47 @@
                 <p><strong>Tecnologia:</strong> Análise e Desenvolvimento de Sistemas - UniSENAI (Em andamento)</p>
             </div>
         </section>
+        <section id="sobre-mim" class="section">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="card-text">
+                <div class="texto-sobre-mim">
+                    <p><strong> Especialista em Rejuvenescimento e Harmonização Facial Injetável: </strong>
+                        Com sólida trajetória na biomedicina estética avançada, atuo como responsável técnica e
+                        injetora,
+                        unindo ciência e arte na aplicação de tecnologias e laser. Meu compromisso reside na busca
+                        incessante
+                        pela perfeição técnica, mantendo-me na vanguarda das novas tecnologias e protocolos
+                        internacionais.
+                        Além da prática clínica, dedico-me ao desenvolvimento de padrões de excelência, conduzindo
+                        treinamentos
+                        e monitorias que garantem a segurança e a alta performance de toda a equipe.</p>
+                </div>
+            </div>
+        </section>
 
         <section id="certificados" class="section">
             <h2 class="section-title">Certificações e Cursos</h2>
             <div class="carousel-box">
                 <div class="carousel-item">
-                    <img src="seu-certificado-1.jpg" alt="Certificado">
-                    <p>Especialização em Toxina Botulínica Avançada</p>
+                    <img src="Assets/cert_gradu.jpeg" alt="Certificado">
+                    <p>Bacharel em Biomedicina</p>
                 </div>
-                <div class="carousel-controls">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+                <div class="carousel-item">
+                    <img src="Assets/cert_pos.jpeg" alt="Certificado">
+                    <p>Pós-Graduação em Biomedicina Estética</p>
                 </div>
+                <button class="carousel-bnt prev" onclick="moveSlide(-1)">&#100094;</button>
+                <button class="carousel-bnt next" onclick="moveSlide(-1)">&#100095;</button>
+
+            </div>
+        </section>
+
+        <section id="experiencia" class="section">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="card-text">
+                <p><strong>Saúde Estética Avançada:</strong> Especialista em injetáveis e harmonização facial.</p>
+                <p><strong>Desenvolvimento Web:</strong> Criação de soluções digitais para o setor da saúde.</p>
+
             </div>
         </section>
 
@@ -64,41 +94,33 @@
             <h2 class="section-title">Resultados Clínicos</h2>
             <div class="grid-resultados">
                 <div class="res-card">
-                    <img src="antes-depois1.jpg" alt="Procedimento">
+                    <img src="Assets/Botox1.jpeg" alt="Procedimento">
                     <div class="res-desc">
-                        <h3>Preenchimento Labial</h3>
-                        <p>Técnica russa para volume e contorno natural.</p>
+                        <h3>Toxina Botulínica</h3>
+                        <p>Descrição xxx.</p>
                     </div>
                 </div>
                 <div class="res-card">
-                    <img src="antes-depois2.jpg" alt="Procedimento">
+                    <img src="Assets/Botox2.jpeg" alt="Procedimento">
                     <div class="res-desc">
-                        <h3>Harmonização Facial</h3>
-                        <p>Projeção de mento e definição de mandíbula.</p>
+                        <h3>Toxina Botulínica</h3>
+                        <p>Descrição xxx.</p>
                     </div>
                 </div>
                 <div class="res-card">
-                    <img src="antes-depois3.jpg" alt="Procedimento">
+                    <img src="Assets/Bioestimulador.jpeg" alt="Procedimento">
                     <div class="res-desc">
-                        <h3>Bioestimuladores</h3>
+                        <h3>Bioestimulador de Colágeno</h3>
                         <p>Tratamento de flacidez com foco em colágeno.</p>
                     </div>
                 </div>
                 <div class="res-card">
-                    <img src="antes-depois4.jpg" alt="Procedimento">
+                    <img src="Assets/Preenchimento.jpeg" alt="Procedimento">
                     <div class="res-desc">
-                        <h3>Rinomodelação</h3>
-                        <p>Elevação da ponta nasal com ácido hialurônico.</p>
+                        <h3>Preenchimento Labial</h3>
+                        <p>Melhora de volume, contorno e hidratação com ácido hialurônico.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="experiencia" class="section">
-            <h2 class="section-title">Experiência Profissional</h2>
-            <div class="card-text">
-                <p><strong>Clínica de Estética Avançada:</strong> Especialista em injetáveis e harmonização facial.</p>
-                <p><strong>Desenvolvimento Web:</strong> Criação de soluções digitais para o setor da saúde.</p>
             </div>
         </section>
     </main>
@@ -108,4 +130,5 @@
     </footer>
 
 </body>
+
 </html>
